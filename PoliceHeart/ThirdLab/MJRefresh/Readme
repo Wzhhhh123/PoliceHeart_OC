@@ -1,0 +1,17 @@
+1.添加头部控件的方法
+[self.tableView addHeaderWithTarget:self action:@selector(headerRereshing)];
+或者
+[self.tableView addHeaderWithCallback:^{ }];
+
+2.添加尾部控件的方法
+[self.tableView addFooterWithTarget:self action:@selector(footerRereshing)];
+或者
+[self.tableView addFooterWithCallback:^{ }];
+
+3.自动进入刷新状态
+[self.tableView headerBeginRefreshing];
+[self.tableView footerBeginRefreshing];
+
+4.结束刷新
+[self.tableView headerEndRefreshing];
+[self.tableView footerEndRefreshing];

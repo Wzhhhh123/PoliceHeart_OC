@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="363" id="KGk-i7-Jjw" customClass="WZDetCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="363"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="362.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifU-Y1-RSf">
+                        <rect key="frame" x="6" y="352.5" width="308" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="IaO-x9-rpn"/>
+                        </constraints>
+                        <string key="text">.........................................................................................................................................................................................................................................................................................................</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Q9-cE-jDM">
+                        <rect key="frame" x="16" y="11" width="288" height="341"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </webView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1Q9-cE-jDM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0Zh-PX-Es7"/>
+                    <constraint firstItem="ifU-Y1-RSf" firstAttribute="top" secondItem="1Q9-cE-jDM" secondAttribute="bottom" constant="0.5" id="7dh-2U-cp0"/>
+                    <constraint firstItem="1Q9-cE-jDM" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="8gy-UY-hTh"/>
+                    <constraint firstAttribute="bottom" secondItem="ifU-Y1-RSf" secondAttribute="bottom" id="Fu7-Lm-jVd"/>
+                    <constraint firstAttribute="trailing" secondItem="ifU-Y1-RSf" secondAttribute="trailing" constant="6" id="N1c-LI-lsP"/>
+                    <constraint firstItem="ifU-Y1-RSf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="NSv-ND-N9D"/>
+                    <constraint firstItem="1Q9-cE-jDM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="W8m-ic-Bas"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="detWeb" destination="1Q9-cE-jDM" id="0Oi-Sx-2a7"/>
+            </connections>
+            <point key="canvasLocation" x="-150" y="-72.5"/>
+        </tableViewCell>
+    </objects>
+</document>

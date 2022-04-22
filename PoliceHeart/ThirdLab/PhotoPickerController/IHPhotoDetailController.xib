@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IHPhotoDetailController">
+            <connections>
+                <outlet property="imageView" destination="Fct-Ra-OHq" id="Tdm-ei-wGj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fct-Ra-OHq">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Xo1-1F-ZcD">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="t8f-Ph-os3"/>
+                        <barButtonItem systemItem="trash" id="6Vd-xm-hxn">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deleteThisImage:" destination="-1" id="hzG-dn-WUm"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Guy-Lc-fd2"/>
+                    </items>
+                    <color key="barTintColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Xo1-1F-ZcD" secondAttribute="trailing" id="1BF-h8-piN"/>
+                <constraint firstItem="Fct-Ra-OHq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DkW-BD-lqX"/>
+                <constraint firstAttribute="trailing" secondItem="Fct-Ra-OHq" secondAttribute="trailing" id="FhB-or-xxV"/>
+                <constraint firstAttribute="bottom" secondItem="Fct-Ra-OHq" secondAttribute="bottom" id="WNg-ef-XG6"/>
+                <constraint firstItem="Xo1-1F-ZcD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bL1-Lv-2ZJ"/>
+                <constraint firstItem="Fct-Ra-OHq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hN0-yH-v4Q"/>
+                <constraint firstAttribute="bottom" secondItem="Xo1-1F-ZcD" secondAttribute="bottom" id="nTF-qM-Paa"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

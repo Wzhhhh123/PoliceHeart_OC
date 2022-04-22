@@ -1,0 +1,14 @@
+//
+//  WZDetCell.h
+//  PoliceHeart
+//
+//  Created by tcy on 2018/11/13.
+//  Copyright © 2018年 tcy. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface WZDetCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIWebView *detWeb;
+
+@end
